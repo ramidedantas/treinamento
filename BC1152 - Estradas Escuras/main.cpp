@@ -48,7 +48,7 @@ void mst_kruskal(vector<edge> &edges, int m, list<edge> &mst_edges) {
         size[i] = 1;
     }
 
-    for (const auto & edge : edges) { // O(N^2)
+    for (const auto & edge : edges) { 
         if (find(parent, edge.v1) != find(parent, edge.v2)) { // find
             connect(parent, size, edge.v1, edge.v2); // union
             mst_edges.push_back(edge);
