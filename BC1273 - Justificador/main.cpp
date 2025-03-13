@@ -1,6 +1,5 @@
 
 #include <iostream>
-
 #include <iomanip>
 
 using namespace std;
@@ -12,22 +11,22 @@ int main() {
 	while (n) {
 		string w[n];
 
-		int max = -1;
+		auto longest = w[0].size();
 
 		for (int i = 0; i < n; i++) {
 			cin >> w[i];
 
-			if (w[i].length() > max) max = w[i].length();
+			longest = max(w[i].length(), longest);
 		}
 
 		for (int i = 0; i < n; i++) {
-			cout << setw(max) << w[i] << endl;
+			cout << right << setw((int)longest) << w[i] << endl;
 		}
 
 		cin >> n;
 
-		// s� botar linha branco se houver um pr�ximo teste
-		// do contr�rio: presentation error
+		// soh botar linha branco se houver um proximo teste
+		// do contrario: presentation error
 		if (n) cout << endl;
 	}
 

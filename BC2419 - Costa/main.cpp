@@ -5,7 +5,7 @@ using namespace std;
 #define TERRA(i, j) (mapa[i][j] == '#')
 #define AGUA(i, j) ((i < 0) || (i >= m) || (j < 0) || (j >= n) || mapa[i][j] == '.')
 
-int mainCPP() {
+int main() {
 
 	int m, n;
 

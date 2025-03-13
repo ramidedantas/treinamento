@@ -24,7 +24,7 @@ int main() {
 				 AGUA(i - 1, j) ||
 				 AGUA(i + 1, j))) {
 				costa++;
-				mapa[i][j] = 'C';
+//				mapa[i][j] = 'C';
 			}
 		}
 	}
