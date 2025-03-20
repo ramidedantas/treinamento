@@ -13,7 +13,6 @@ int main() {
     q++;                // 2 ^ n + 1
 
     p = q * q;          // (2 ^ n + 1) ^ 2
-
     cout << p << endl;
 
     return 0;
