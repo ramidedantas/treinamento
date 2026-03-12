@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 
@@ -7,7 +6,7 @@ int main() {
 
 	scanf("%d", &n);
 
-	while (n) {
+	while (n != 0) {
 		char w[n][51];
 
 		int max = -1, len;

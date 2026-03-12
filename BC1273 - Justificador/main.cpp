@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <vector>
 
 using namespace std;
 
@@ -9,14 +10,15 @@ int main() {
 	cin >> n;
 
 	while (n) {
-		string w[n];
+		// string w[n];
+		vector<string> w(n);
 
-		auto longest = w[0].size();
+		int longest = -1;
 
 		for (int i = 0; i < n; i++) {
 			cin >> w[i];
 
-			longest = max(w[i].length(), longest);
+			longest = max((int)w[i].length(), longest);
 		}
 
 		for (int i = 0; i < n; i++) {
